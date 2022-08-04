@@ -29,7 +29,7 @@ export default function BlogPage({ articles }) {
   return (
     <div>
       {articles?.length
-        ? nodes.map((node) => (
+        ? articles.map((node) => (
             <div key={node.id}>
               <h1>{node.title}</h1>
             </div>
